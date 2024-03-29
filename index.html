@@ -41,33 +41,26 @@
       border-radius: 5px;
     }
 
-    .spammer-button {
+    button {
+      padding: 10px 20px;
       background-color: #ff0000; /* เปลี่ยนสีปุ่มเป็นสีแดง */
       color: #fff;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      padding: 10px 20px;
-      margin-top: 10px;
     }
 
-    .swipe-up {
-      position: fixed;
-      bottom: -60px; /* ให้ปุ่ม Swipe Up อยู่ด้านล่างของหน้า */
-      left: 50%;
-      transform: translateX(-50%);
-      display: block;
-      width: 60px;
-      height: 60px;
-      background-color: #ff0000; /* เปลี่ยนสีปุ่มเป็นสีแดง */
-      color: #fff;
-      border: none;
-      border-radius: 50%; /* ทำให้เป็นวงกลม */
-      font-size: 24px;
-      line-height: 60px;
-      text-align: center;
-      z-index: 999;
-      transition: bottom 0.3s; /* เพิ่ม transition เพื่อทำให้ปุ่ม Swipe Up มีการเคลื่อนที่อย่างนุ่มนวล */
+    button:hover {
+      background-color: #cc0000; /* เปลี่ยนสีเมื่อ hover */
+    }
+
+    #log {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .credits {
+      color: #000; /* เปลี่ยนสีของข้อความเป็นสีดำ */
     }
   </style>
 </head>
@@ -84,26 +77,13 @@
     <br>
     <input type="text" id="content" placeholder="Message :">
     <br>
-    <button class="spammer-button" id="btn">Spammer</button>
+    <button id="btn">Spammer</button>
     <div id='log'></div>
     <p class="credits">Made by Madkung❤️‍🔥</p> <!-- เปลี่ยน Cr:Madkung เป็น Made by Madkung❤️‍🔥 และเพิ่ม style สำหรับสีดำ -->
   </div>
 
-  <iframe allowtransparency="true" frameborder="0" height="500" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" src="https://discord.com/widget?id=1204772275849789550&amp;theme=dark" width="100%"></iframe>
-
-  <button class="swipe-up" onclick="scrollToTop()">↑</button>
-
   <script src="jquery.js"></script>
   <script src="main.js"></script>
-  <script>
-    // ฟังก์ชันสำหรับเลื่อนหน้าไปที่ด้านบนของหน้า
-    function scrollToTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    }
-  </script>
 </body>
 
 </html>
