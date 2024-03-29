@@ -14,6 +14,49 @@
   <style>
     body, input, button, p, h1 {
       font-family: 'Mitr', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #header {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .center-align {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    input[type='text'] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #log {
+      margin-top: 20px;
+      font-size: 18px;
     }
   </style>
 </head>
@@ -25,25 +68,17 @@
   </div>
   <div id="container">
     <div class="center-align">
-      <p style="color: #00ff55"></p><input type='text' id="link" placeholder="Webhook URL :">
-      <p>&#160;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <p>
-      <p style="color: #00ff55"></p><input type="text" id="username" placeholder="Bot Username :">
-      <p>&#160;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <p>
-      <p style="color: #00ff55"></p><input type="text" id="avatar" placeholder="Avatar URL :">
-      <p>&#160;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <p>
-      <p style="color: #00ff55"></p><input type="text" id="content" placeholder="Message :">
+      <input type='text' id="link" placeholder="Webhook URL :">
       <br>
-      <p>&#160;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <p>
-        <button id="btn">Spammer</button>
-        <center>
-          <p id='log'></p>
-        </center>
+      <input type="text" id="username" placeholder="Bot Username :">
+      <br>
+      <input type="text" id="avatar" placeholder="Avatar URL :">
+      <br>
+      <input type="text" id="content" placeholder="Message :">
+      <br>
+      <button id="btn">Spammer</button>
+      <div id='log'></div>
     </div>
-  </div>
   </div>
 
   <script src="jquery.js"></script>
